@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\Status;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,6 +17,7 @@ class DatabaseSeeder extends Seeder
         Model::unguard();
         
         $this->call(UserTableSeeder::class);
+        $this->call(StatusesTableSeeder::class);
         
         Model::reguard();
     }
