@@ -25,3 +25,5 @@ Route::get('/', function () {
     Route::delete('logout', 'SessionsController@destroy')->name('logout');
     
     Route::resource('users', 'UsersController');
+    
+    Route::get('signup/confirm/{token}', 'UsersController@confirmEmail')->name('confirm_email');
