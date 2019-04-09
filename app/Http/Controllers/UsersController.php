@@ -136,5 +136,7 @@ class UsersController extends Controller{
         return view('users.show_follow', compact('users', 'title'));
     }
     
+    
+    
 
 }
